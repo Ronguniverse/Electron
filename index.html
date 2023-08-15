@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script/index.css">
+    <title></title>
+    <!-- Ctrl + Shift + I 打开调试 -->
+</head>
+
+<body>
+
+
+    <div class="topbar">
+        <span id="logo"><img src="res/img/Anya.ico" alt="?" style="height: auto;"></span>
+        <span id="title">我的应用</span>
+        <div class="min_max_close">
+            <svg id="min" width="24" height="24">
+                <line x1="6" y1="12" x2="18" y2="12"
+                    style="stroke:#ffffff; stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round" />
+            </svg>
+            <svg id="max" width="24" height="24">
+                <polygon points="8,8 8,16 16,16 16,8" style="fill:#00000000;stroke:#fff;stroke-width:0.5" />
+            </svg>
+            <svg id="close" width="24" height="24">
+                <line x1="8" y1="16" x2="16" y2="8"
+                    style="stroke:#fff; stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round" />
+                <line x1="8" y1="8" x2="16" y2="16"
+                    style="stroke:#fff; stroke-width:0.5;" />
+
+            </svg>
+        </div>
+    </div>
+
+    <div class="test">
+        <br>
+        <hr><hr>
+        <h1>版本信息</h1>
+        <p id="info"></p>
+
+        <br>
+        <hr><hr>
+        <h1>测试按钮</h1>
+        <div>
+            <button id="fsBtn">fsBtn(文件流)</button><br>
+            <code id="fsContent">文件内容</code>
+        </div>
+        <div>
+            <button id="ipcBtn">ipcBtn(进程间通信)</button><br>
+            <code id="ipcContent">通信内容</code>
+        </div>
+    </div>
+
+</body>
+<script src="script/renderer.js"></script>
+<script src="script/topbarCtrler.js"></script>
+
+</html>

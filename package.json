@@ -1,0 +1,16 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "My first electron app",
+  "main": "main.js",
+  "scripts": {
+    "start": "chcp 65001 && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "verse",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.5.0",
+    "electron-builder": "^24.6.3"
+  }
+}

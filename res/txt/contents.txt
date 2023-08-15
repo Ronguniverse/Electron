@@ -1,0 +1,1 @@
+fs（file system）模块是nodejs提供的用于访问本地文件系统的功能模块，它使得运行于nodejs环境下的JavaScript具备直接读写本地文件的能力。
