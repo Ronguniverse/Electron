@@ -10,3 +10,12 @@ window.onload = () => {
     _max.onclick = () => topbarCtrler.max()
     _close.onclick = () => topbarCtrler.close()
 }
+
+/**
+ * 选择器
+ * ID => # 或者 Class => .
+ * @param {string} str
+ */
+function $(str) {
+    return document.querySelector(str);
+}
