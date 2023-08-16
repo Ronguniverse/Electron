@@ -1,0 +1,17 @@
+{
+    "directories": {
+        "output": "dist" // 输出目录
+    },
+    "linux": {
+        "target": "deb",
+        "icon": "res/img/Anya.ico"
+    },
+    "mac": {
+        "target": "dmg",
+        "icon": "res/img/Anya.ico"
+    },
+    "win": {
+        "target": "nsis",
+        "icon": "res/img/Anya.ico"
+    }
+}

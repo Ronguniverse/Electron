@@ -1,10 +1,11 @@
 {
-  "name": "electron",
+  "name": "rong-app",
   "version": "1.0.0",
   "description": "My first electron app",
   "main": "main.js",
   "scripts": {
     "start": "chcp 65001 && electron .",
+    "build": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "verse",
@@ -12,5 +13,21 @@
   "devDependencies": {
     "electron": "^25.5.0",
     "electron-builder": "^24.6.3"
+  },
+  "build": {
+    "appId": "com.rong-app.app",
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "android": {
+      "target": "apk"
+    }
   }
+  
 }
